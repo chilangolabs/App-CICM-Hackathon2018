@@ -28,10 +28,10 @@ class MainListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_list)
 
         val data = mutableListOf<ItemMain>()
-        data.add(ItemMain("Mis Reportes", "03"))
-        data.add(ItemMain("Reporte Vecinos", "03"))
-        data.add(ItemMain("Noticias", "03"))
-        data.add(ItemMain("Mi Kalpoli", "03"))
+        data.add(ItemMain("Mis Reportes", "04"))
+        data.add(ItemMain("Reporte Vecinos", "20"))
+        data.add(ItemMain("Noticias", "12"))
+        data.add(ItemMain("Mi Kalpoli", "06"))
         data.add(ItemMain("Agregar\nreporte", "03", false))
 
         val adapter = AdapterMainList(data, listenerRc)

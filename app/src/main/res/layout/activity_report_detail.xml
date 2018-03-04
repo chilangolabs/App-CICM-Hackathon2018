@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.chilangolabs.hackcicm.activitys.ReportDetailActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_building" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.chilangolabs.hackcicm.customelements.MontserratTextView
+            android:id="@+id/txtReportDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edificio dañado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:transitionName="@string/item_report_title_transitionname"
+            app:fontM="Regular" />
+
+        <com.chilangolabs.hackcicm.customelements.MontserratTextView
+            android:id="@+id/txtReportDetailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatus activo"
+            android:transitionName="@string/item_report_status_transitionname"
+            app:fontM="Light" />
+
+        <com.chilangolabs.hackcicm.customelements.MontserratTextView
+            android:id="@+id/txtReportDetailDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/lorem_ipsum_cook"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:transitionName="@string/item_report_status_transitionname"
+            app:fontM="Light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/map_report_incidence_placeholder" />
+
+    </LinearLayout>
+
+</LinearLayout>

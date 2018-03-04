@@ -7,7 +7,7 @@ import android.content.Intent
 import android.media.RingtoneManager
 import android.support.v4.app.NotificationCompat
 import com.chilangolabs.hackcicm.R
-import com.chilangolabs.hackcicm.activitys.MainListActivity
+import com.chilangolabs.hackcicm.activitys.ReportDetailActivity
 import com.chilangolabs.hackcicm.utils.loge
 import com.chilangolabs.hackcicm.utils.logi
 import com.google.firebase.messaging.FirebaseMessagingService
@@ -40,7 +40,7 @@ class FCMessagingService : FirebaseMessagingService() {
     private fun sendNotification(messageBody: RemoteMessage) {
         //TODO("Make intent for PushNotification")
         loge(messageBody.data)
-        val intent = Intent(this, MainListActivity::class.java)
+        val intent = Intent(this, ReportDetailActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NO_HISTORY or Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         val pendingIntent = PendingIntent.getActivity(this, System.currentTimeMillis().toInt(), intent, PendingIntent.FLAG_ONE_SHOT)
 

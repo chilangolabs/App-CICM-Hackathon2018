@@ -4,16 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.ActivityOptionsCompat
 import android.support.v4.util.Pair
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.chilangolabs.hackcicm.activitys.BaseActivity
 import com.chilangolabs.hackcicm.activitys.RegisterFormActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setStatusBarWhite(window)
     }
 
     override fun onResume() {

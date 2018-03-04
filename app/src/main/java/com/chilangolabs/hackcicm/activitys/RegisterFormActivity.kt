@@ -6,7 +6,7 @@ import com.chilangolabs.hackcicm.R
 import kotlinx.android.synthetic.main.activity_register_form.*
 import org.jetbrains.anko.startActivity
 
-class RegisterFormActivity : AppCompatActivity() {
+class RegisterFormActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

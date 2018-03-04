@@ -25,7 +25,8 @@ class MainActivity : BaseActivity() {
             val intent = Intent(this, RegisterFormActivity::class.java)
             val p1: Pair<View, String> = Pair.create(txtLoginTitle as View, getString(R.string.app_name))
             val p2: Pair<View, String> = Pair.create(cardLoginForm as View, getString(R.string.containerForm))
-            val options: ActivityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1, p2)
+            val p3: Pair<View, String> = Pair.create(imgLoginLogo as View, "imagetransitionname")
+            val options: ActivityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1, p2, p3)
 
             startActivity(intent, options.toBundle())
         }

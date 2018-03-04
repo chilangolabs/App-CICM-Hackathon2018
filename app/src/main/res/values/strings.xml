@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kalpoli</string>
+    <string name="login">Entrar</string>
+    <string name="mail">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="containerForm">containerformtransition</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "451366964442",
+    "firebase_url": "https://hackcicm.firebaseio.com",
+    "project_id": "hackcicm",
+    "storage_bucket": "hackcicm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451366964442:android:87d6f663af3f9fe8",
+        "android_client_info": {
+          "package_name": "com.chilangolabs.hackcicm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451366964442-ug95c3pgv2ecmj18p4g4oq7k3l2j538a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chilangolabs.hackcicm",
+            "certificate_hash": "3e24fc6f1c8cfc0a3fbcddbd8ddc56b12f10fe6d"
+          }
+        },
+        {
+          "client_id": "451366964442-f19mg28f3l1s6ea5njc8jn91a1245p58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR5pKbrjAM2qeEoDX7QX5OOgAbyxW3fEU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451366964442-f19mg28f3l1s6ea5njc8jn91a1245p58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,4 +5,4 @@ package com.chilangolabs.hackcicm.entitys
  * @since 04/03/18.
  */
 
-data class ItemMain(val Title: String, val numItems: String)
+data class ItemMain(val Title: String, val numItems: String, val show: Boolean = true)

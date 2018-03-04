@@ -7,6 +7,7 @@ import com.chilangolabs.hackcicm.CameraPicker.PickerBuilder
 import com.chilangolabs.hackcicm.R
 import kotlinx.android.synthetic.main.activity_verify_id.*
 import org.jetbrains.anko.imageURI
+import org.jetbrains.anko.startActivity
 
 class VerifyIDActivity : BaseActivity() {
 
@@ -35,6 +36,10 @@ class VerifyIDActivity : BaseActivity() {
                     .setCropScreenColor(Color.BLACK)
                     .start()
 
+        }
+
+        btnValidate?.setOnClickListener {
+            startActivity<MainListActivity>()
         }
 
     }

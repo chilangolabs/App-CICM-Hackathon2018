@@ -12,13 +12,16 @@ import kotlinx.android.synthetic.main.item_tile_main.view.*
  * @author gorrotowi
  * @since 04/03/18.
  */
-class AdapterMainList(val data: List<ItemMain>, listener: OnRCListener) : RecyclerView.Adapter<AdapterMainList.VH>() {
+class AdapterMainList(val data: List<ItemMain>, val listener: OnRCListener) : RecyclerView.Adapter<AdapterMainList.VH>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH =
             VH(LayoutInflater.from(parent.context).inflate(R.layout.item_tile_main, parent, false))
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         holder.bindView(data[position])
+        holder.itemView?.setOnClickListener {
+            listener.onClick(position)
+        }
     }
 
     override fun getItemCount(): Int = data.size
@@ -28,7 +31,9 @@ class AdapterMainList(val data: List<ItemMain>, listener: OnRCListener) : Recycl
             v?.let {
                 with(it) {
                     txtItemMainTitle.text = item.Title
-                    txtItemMainNumItems.text = "${item.numItems}\nItems"
+                    if (item.show) {
+                        txtItemMainNumItems.text = "${item.numItems}\nItems"
+                    }
                 }
             }
         }
@@ -36,5 +41,5 @@ class AdapterMainList(val data: List<ItemMain>, listener: OnRCListener) : Recycl
 }
 
 interface OnRCListener {
-    fun OnClick(position: Int)
+    fun onClick(position: Int)
 }

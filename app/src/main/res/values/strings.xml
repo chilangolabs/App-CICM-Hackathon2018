@@ -7,4 +7,5 @@
     <string name="containerForm">containerformtransition</string>
     <string name="validate">Validar</string>
     <string name="item_report_title_transitionname">itemreporttitletransition</string>
+    <string name="report_title_transitionname">reportTitleTransitionName</string>
 </resources>

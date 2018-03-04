@@ -41,7 +41,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activitys.RegisterFormActivity" />
         <activity android:name=".activitys.VerifyIDActivity" />
-        <activity android:name=".activitys.MainListActivity"></activity>
+        <activity android:name=".activitys.MainListActivity" />
+        <activity android:name=".activitys.ReportsActivity"></activity>
     </application>
 
 </manifest>

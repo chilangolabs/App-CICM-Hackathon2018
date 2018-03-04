@@ -42,7 +42,8 @@
         <activity android:name=".activitys.RegisterFormActivity" />
         <activity android:name=".activitys.VerifyIDActivity" />
         <activity android:name=".activitys.MainListActivity" />
-        <activity android:name=".activitys.ReportsActivity"></activity>
+        <activity android:name=".activitys.ReportsActivity" />
+        <activity android:name=".activitys.ReportDetailActivity"></activity>
     </application>
 
 </manifest>

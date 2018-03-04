@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.chilangolabs.hackcicm.R
 import com.chilangolabs.hackcicm.entitys.ItemReportsNews
 import kotlinx.android.synthetic.main.item_reports_news.view.*
@@ -30,7 +31,8 @@ class AdapterReportsNews(val data: List<ItemReportsNews>, private val listener: 
             v?.let {
                 with(it) {
                     txtItemReportsTitle.text = item.title
-                    txtItemReportsTitle.text = item.status
+                    txtItemReportsStatus.text = item.status
+                    Glide.with(context).load("https://loremflickr.com/320/240").into(imgItemReports)
                 }
             }
         }

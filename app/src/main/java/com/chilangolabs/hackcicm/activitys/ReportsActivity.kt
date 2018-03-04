@@ -29,11 +29,14 @@ class ReportsActivity : AppCompatActivity() {
         }
 
         val data = mutableListOf<ItemReportsNews>()
-        data.add(ItemReportsNews("Edificio dañado", "Estatus activo"))
-        data.add(ItemReportsNews("Edificio dañado", "Estatus activo"))
-        data.add(ItemReportsNews("Edificio dañado", "Estatus activo"))
-        data.add(ItemReportsNews("Edificio dañado", "Estatus activo"))
-        data.add(ItemReportsNews("Edificio dañado", "Estatus activo"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/1"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/2"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/3"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/4"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/5"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/6"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/7"))
+        data.add(ItemReportsNews("Edificio dañado", "Estatus activo", "http://lorempixel.com/300/300/city/8"))
 
         val adapter = AdapterReportsNews(data, listenerRc)
 

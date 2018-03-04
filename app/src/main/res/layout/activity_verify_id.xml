@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chilangolabs.hackcicm.activitys.VerifyIDActivity">
+
+    <com.chilangolabs.hackcicm.customelements.MontserratTextView
+        android:id="@+id/txtIDVerificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardIDVerificationForm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:transitionName="@string/containerForm"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIDVerificationTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.chilangolabs.hackcicm.customelements.MontserratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifica tu identificación"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:fontM="Regular" />
+
+            <ImageView
+                android:id="@+id/imgIDFront"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/img_id_front_placeholder" />
+
+            <ImageView
+                android:id="@+id/imgIDBack"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_id_back_placeholder" />
+
+            <com.chilangolabs.hackcicm.customelements.MontserratButton
+                android:id="@+id/btnValidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bg_button_blue_gradient"
+                android:text="@string/validate"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:fontM="Light" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
